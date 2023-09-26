@@ -1,0 +1,174 @@
+#home-page-top-div {
+  height: 100vh;
+  width: 100%;
+}
+
+#home-page-image {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/maths-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.3);
+  position: relative;
+}
+
+#home-page {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-page-content {
+  width: 40%;
+  text-align: center;
+}
+
+#check-heading {
+  font-size: 1.4rem;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+#home-heading {
+  color: whitesmoke;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#name {
+  width: 30rem;
+  height: 2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(249, 245, 246);
+  margin: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+#question-checkboxes {
+  width: fit-content;
+  margin: auto;
+}
+
+.checkbox-container {
+  margin-bottom: 1rem;
+  position: relative;
+  font-size: 1.5rem;
+  color: beige;
+}
+
+.checkbox-container:hover .checkbox-label:before {
+  background-color: #8c8888;
+}
+
+.checkbox-label {
+  margin-left: 2rem;
+}
+
+.checkbox-label:before {
+  content: "";
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: rgb(249, 245, 246);
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-input:checked + .checkbox-label:before {
+  content: "\2713";
+  text-shadow: 1px 1px 1px rgba(99, 18, 18, 0.2);
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+  line-height: 12px;
+  font-weight: 800;
+  background-color: rgb(146, 146, 146);
+}
+
+#total-ques-display {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: beige;
+}
+
+#start-test-btn {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 10rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  background: linear-gradient(
+      to left,
+      rgb(243, 237, 235) 50%,
+      rgb(163, 164, 164) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+#start-test-btn:hover {
+  background-position: left;
+  color: #242424;
+}
+
+/* media queries for responsive design */
+@media screen and (max-width: 1300px) {
+  #home-page-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #check-heading {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+  }
+
+  #name {
+    width: 20rem;
+  }
+  #home-heading {
+    color: whitesmoke;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  .checkbox-label:before {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  #total-ques-display {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  #name {
+    width: 15rem;
+  }
+}

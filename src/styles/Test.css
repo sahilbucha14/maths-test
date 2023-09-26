@@ -1,0 +1,193 @@
+#test-page {
+  position: relative;
+  background-color: rgb(245, 243, 240);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#arrow-right-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  /* display: none; */
+  width: 30px;
+  color: rgb(83, 83, 144);
+  cursor: pointer;
+}
+
+#time-component {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#test-page-content {
+  height: fitcontent;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+#test-page-content-div {
+  height: fit-content;
+  width: 60%;
+  position: relative;
+  text-align: center;
+}
+
+#ques-no-heading {
+  color: rgb(83, 83, 144);
+  font-size: 1.3rem;
+  font-family: monospace;
+  font-weight: 800;
+}
+
+#ques-display {
+  font-size: 1.8rem;
+  margin: 1rem 0 5rem 0;
+  color: #242424;
+}
+
+/* styling buttons  */
+
+#prev-btn {
+  position: absolute;
+  left: 1rem;
+}
+
+#next-btn {
+  position: absolute;
+  right: 1rem;
+}
+
+#submit-btn {
+  position: absolute;
+  right: 1rem;
+}
+
+.test-btn {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  width: 10rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  border: 2px solid rgb(55, 55, 126);
+  color: rgb(55, 55, 126);
+  background: linear-gradient(
+      to left,
+      rgb(243, 237, 235) 50%,
+      rgb(68, 68, 157) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.test-btn:hover {
+  background-position: left;
+  color: rgb(241, 238, 238);
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1496px) {
+  #test-page-content-div {
+    width: 70%;
+  }
+  #ques-display {
+    margin: 1rem 0 3rem 0;
+  }
+}
+
+@media screen and (min-width: 925px) and (max-width: 1100px) {
+  #test-page-content-div {
+    width: 78%;
+  }
+  #ques-display {
+    margin: 1rem 0 1.8rem 0;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 925px) {
+  #test-page-content {
+    width: 100%;
+  }
+  #test-page-content-div {
+    width: 88%;
+  }
+  #ques-display {
+    margin: 1rem 0 1.8rem 0;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  #test-page-content {
+    width: 100%;
+  }
+  #test-page-content-div {
+    width: 94%;
+  }
+  .test-btn {
+    font-size: 1.3rem;
+    width: 8rem;
+    padding: 0.2rem 0.6rem;
+  }
+  #ques-no-heading {
+    font-size: 1.2rem;
+  }
+
+  #ques-display {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem 0;
+  }
+  #prev-btn {
+    left: 1.5rem;
+  }
+
+  #next-btn {
+    right: 1.5rem;
+  }
+
+  #submit-btn {
+    right: 1.5rem;
+  }
+  #arrow-right-btn {
+    width: 26px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 500px) {
+  #test-page-content {
+    width: 100%;
+  }
+  #test-page-content-div {
+    width: 80%;
+  }
+  .test-btn {
+    font-size: 1.1rem;
+    width: 6rem;
+    padding: 0.4rem 0.6rem;
+  }
+  #ques-no-heading {
+    font-size: 1.2rem;
+  }
+
+  #ques-display {
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem 0;
+  }
+  #prev-btn {
+    left: 0.5rem;
+  }
+
+  #next-btn {
+    right: 0.5rem;
+  }
+
+  #submit-btn {
+    right: 0.5rem;
+  }
+  #arrow-right-btn {
+    width: 23px;
+  }
+}
